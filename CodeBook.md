@@ -1,5 +1,5 @@
-##CodeBook for tidy dataset
-#produced by the R script run_analysis.R
+#CodeBook for tidy dataset
+##produced by the R script run_analysis.R
 
 * The result set is grouped by activity and subject_id and all aggregate functions are the mean.
 * X, Y, Z refer to spatial coordinates.
