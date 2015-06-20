@@ -217,3 +217,6 @@ X_grouped <- group_by(X_final, activity, subject_id)
 
 ##Step 5
 X_tidy <- summarise_each(X_grouped, funs(mean))
+
+##Output
+X_tidy
