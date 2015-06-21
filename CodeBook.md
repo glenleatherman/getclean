@@ -14,6 +14,18 @@ The run_analysis.R script performs the following:
  * Use **summarise_each** to get means for the grouping
  * Output the result
  
+Variables
+ * X_test, y_test, subject_test                        To hold the test data
+ * X_train, y_train, subject_train                     To hold the train data
+ * X_all, y_all, subject_all                           The combined data (rbind)
+ * X_table                                             The combined data (cbind) 
+ * X_df                                                Converted to tbl_df
+ * X_select                                            Select only the columns we want
+ * activities, activities_df                           Activities loaded, converted to tbl_df
+ * X_with_activities                                   Activities added to main dataset
+ * X_with_names, X_final, X_grouped                    Data mutated, put into final form and grouped
+ * X_tidy                                              Tidy data set
+ 
 * The result set is grouped by activity and subject_id and all aggregate functions are the mean.
 * X, Y, Z refer to spatial coordinates.
 * Example using item 3: the mean of the mean time for acceleration due to body movement in the X direction.
