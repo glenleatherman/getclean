@@ -8,17 +8,8 @@ Requirements:
  * Appropriately labels the data set with descriptive variable names. 
  * From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-I fulfilled the requirements in R script run_analysis.R which should be available in the same directory as this README.
+All data files available here: [UCI HAR Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip )
 
-The script performs the following:
- * Load packages dplyr and tidyr.
- * Load the test and train data using read.table.  
- * Combine the test and train data using rbind.  
- * Use cbind to combine the data with the subject IDs and activity IDs.
- * Convert the resulting data.frame to a tbl_df for easier processing
- * Select only the mean and std deviation columns (plus subject_id and activity_id).
- * Use inner_join to add activity names
- * Use mutate to change the column names to descriptive names
- * Group by activity and subject using group_by
- * Use summarise_each to get means for the grouping
- * Output the result
+All code and documentation assumes you are in the directory that is created by unzipping this file.
+
+
