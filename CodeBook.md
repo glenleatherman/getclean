@@ -1,6 +1,19 @@
 #CodeBook for tidy dataset
 ##produced by the R script run_analysis.R
 
+The run_analysis.R script performs the following:
+ * Load packages **dplyr** and **tidyr**.
+ * Load the test and train data using **read.table**.  
+ * Combine the test and train data using **rbind**.  
+ * Use **cbind** to combine the data with the subject IDs and activity IDs.
+ * Convert the resulting data.frame to a **tbl_df** for easier processing
+ * **Select** only the mean and std deviation columns (plus subject_id and activity_id).
+ * Use **inner_join** to add activity names
+ * Use **mutate** to change the column names to descriptive names
+ * Group by activity and subject using **group_by**
+ * Use **summarise_each** to get means for the grouping
+ * Output the result
+ 
 * The result set is grouped by activity and subject_id and all aggregate functions are the mean.
 * X, Y, Z refer to spatial coordinates.
 * Example using item 3: the mean of the mean time for acceleration due to body movement in the X direction.
