@@ -12,4 +12,18 @@ All data files available here: [UCI HAR Dataset.zip](https://d396qusza40orc.clou
 
 All code and documentation assumes you are in the directory that is created by unzipping this file.
 
+This course project uses the following files from the UCI HAR Dataset:
+
+  File                        |Description
+  ----------------------------|------------
+  test/X_test.txt             |The measurements from the dataset assigned to the test group
+  test/y_test.txt             |The activity codes for the test group 
+  test/subject_test.txt       |The subject ids for the test group
+  train/X_train.txt           |The measurements from the dataset assigned to the train group
+  train/y_train.txt           |The activity codes for the train group
+  train/subject_train.txt     |The subject ids for the train group
+  activity_labels.txt         |Descriptive text for the activity codes
+
+This GitHub repo contains this README, an R script called run_analysis.R and a CodeBook.
+The R script produces a dataset that is described in the CodeBook.
 
